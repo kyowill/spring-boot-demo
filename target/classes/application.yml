@@ -1,0 +1,8 @@
+server:
+  port: 80
+
+student:
+  name: xxx
+  age: 18
+
+msg: 2
