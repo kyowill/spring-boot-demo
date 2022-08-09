@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dal.RunoobMapper">
+    <!--   必须添加property属性 ，区别于是否加主键-->
+    <resultMap id="runoob" type="com.app.dal.Runoob">
+        <result column="runoob_id" property="runoobId" jdbcType="BIGINT" />
+        <result column="runoob_title" property="runoobTitle" jdbcType="VARCHAR" />
+        <result column="runoob_author" property="runoobAuthor" jdbcType="VARCHAR" />
+        <result column="submission_date" property="submissionDate" jdbcType="TIMESTAMP" />
+    </resultMap>
+    <!--id的值必须和数据处理层的接口名一致-->
+    <!--此处的User-->
+    <select id="queryAll" resultMap="runoob">
+        select * from runoob_tbl where runoob_id = #{runoob_id}
+    </select>
+</mapper>
