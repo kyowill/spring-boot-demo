@@ -1,5 +1,5 @@
 import com.app.App;
-import com.app.properties.Student;
+import com.app.biz.Student;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

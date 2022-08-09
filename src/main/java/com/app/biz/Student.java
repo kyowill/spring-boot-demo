@@ -1,4 +1,4 @@
-package com.app.properties;
+package com.app.biz;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 import java.util.Objects;
 
 @Component
-@ConfigurationProperties(prefix = "student")
 public class Student {
     private String name;
     private int age;
